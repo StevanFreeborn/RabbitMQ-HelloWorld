@@ -34,7 +34,7 @@
   "compounds": [
     {
       "name": "Send + Receive",
-      "configurations": ["Send", "Receive"]
+      "configurations": ["Receive", "Send"]
     }
   ]
 }

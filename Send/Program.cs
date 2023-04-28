@@ -19,7 +19,7 @@ var factory = new ConnectionFactory
 using var conn = factory.CreateConnection();
 using var chan = conn.CreateModel();
 
-var queueName = "hello";
+var queueName = rabbitMQConfig.GetSection("MessageQueue").Value;
 
 chan.QueueDeclare(
   queue: queueName,
