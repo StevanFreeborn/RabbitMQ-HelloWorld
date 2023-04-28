@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Send",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build sender",
+      "program": "${workspaceFolder}/Send/bin/Debug/net7.0/Send.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Send",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "name": "Receive",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build receiver",
+      "program": "${workspaceFolder}/Receive/bin/Debug/net7.0/Receive.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Receive",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Send + Receive",
+      "configurations": ["Send", "Receive"]
+    }
+  ]
+}
