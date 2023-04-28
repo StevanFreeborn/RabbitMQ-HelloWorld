@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "REWDrYTyi60bIMIvy3GRuf9vMnsz7CYvMdTTteb6J5Ai01+tBMmC6flG+V5VZ2q8RlTJkDCgbEVb5h3MU26cCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sfree\\software_projects\\RabbitMQ-HelloWorld\\Receive\\Receive.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sfree\\.nuget\\packages\\rabbitmq.client\\6.5.0\\rabbitmq.client.6.5.0.nupkg.sha512",
+    "C:\\Users\\sfree\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\sfree\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
