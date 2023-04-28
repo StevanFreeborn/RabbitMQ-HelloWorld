@@ -6,12 +6,14 @@ var config = new ConfigurationBuilder()
 .AddJsonFile($"appsettings.development.json")
 .Build();
 
+var rabbitMQConfig = config.GetSection("RabbitMQ");
+
 var factory = new ConnectionFactory
 {
   HostName = "localhost",
   Port = 5672,
-  UserName = config.GetSection("RabbitMQ").GetSection("Username").Value,
-  Password = config.GetSection("RabbitMQ").GetSection("Password").Value
+  UserName = rabbitMQConfig.GetSection("Username").Value,
+  Password = rabbitMQConfig.GetSection("Password").Value
 };
 
 using var conn = factory.CreateConnection();
