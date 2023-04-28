@@ -1,0 +1,7 @@
+{
+  "RabbitMQ": {
+    "Username": "username",
+    "Password": "password",
+    "Port": 0
+  }
+}

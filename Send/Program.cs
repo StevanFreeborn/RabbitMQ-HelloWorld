@@ -11,7 +11,7 @@ var rabbitMQConfig = config.GetSection("RabbitMQ");
 var factory = new ConnectionFactory
 {
   HostName = "localhost",
-  Port = 5672,
+  Port = int.Parse(rabbitMQConfig.GetSection("Port").Value ?? string.Empty),
   UserName = rabbitMQConfig.GetSection("Username").Value,
   Password = rabbitMQConfig.GetSection("Password").Value
 };
